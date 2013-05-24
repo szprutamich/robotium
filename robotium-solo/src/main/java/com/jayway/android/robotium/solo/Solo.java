@@ -897,6 +897,28 @@ public class Solo {
 		}
 	}
 	
+	 /**
+     * Clicks the specified View.
+     * 
+     * @param clazz the {@link Class} of View to click
+     * @param index index of View
+     */
+	
+	public <T extends View> void clickOnView(Class<T> clazz, int index) {
+	    clicker.clickOn(clazz, index);
+	}
+	
+    /**
+     * Clicks the specified View.
+     * 
+     * @param clazz the {@link Class} of TextView to click
+     * @param text text of TextView
+     */
+	
+	public <T extends TextView> void clickOnView(Class<T> clazz, String text) {
+	    clicker.clickOn(clazz, text);
+	}
+	
 	/**
 	 * Long clicks the specified View.
 	 *
